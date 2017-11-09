@@ -1,0 +1,10 @@
+<ul>
+    <li *ngFor="let board of boards; index as i;">
+        {{ i }} - {{ board.id }} | {{ board.writer }} | {{ board.title }} | {{ board.content }}
+    </li>
+</ul>
+
+<p *ngIf="board"> {{ board.id }} - {{ board.writer }} - {{ board.title }} - {{ board.content }} </p>
+
+
+<button (click)="mutation()">mutation</button>
